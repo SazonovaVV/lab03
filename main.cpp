@@ -109,7 +109,7 @@ void svg_end()
 {
     cout << "</svg>\n";
 }
-void svg_rect(double x, double y, double width, double height, string stroke, string fill)
+void svg_rect(double x, double y, double width, double height, void svg_rect(double x, double y, double width, double height, string stroke = "black", string fill = "black")
 {
     cout << "<rect x='"<< x << "' y='" <<y<<"' width='" <<width <<"' height='" <<height <<"'stroke='"<< stroke <<"' fill='"<<fill<<"'/>\n";
 }
