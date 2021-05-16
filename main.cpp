@@ -109,10 +109,20 @@ void svg_end()
 {
     cout << "</svg>\n";
 }
+void svg_rect(double x, double y, double width, double height)
+{
+    cout << "<rect x='"<< x << "' y='" <<y<<"' width='" <<width <<"' height='" <<height <<"'/>\n";
+}
+void svg_text(double left, double baseline, string text)
+{
+    cout << "<text x='" << left << "' y='"<< baseline <<"'>"<<text<<"</text>\n";
+}
 
 void show_histogram_svg(const vector<size_t>& bins)
 {
     svg_begin(400, 300);
+    svg_text(20, 20, to_string(bins[0]));
+    svg_rect(50, 0, bins[0] * 10, 30);
     svg_end();
 }
 
