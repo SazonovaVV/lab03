@@ -1,7 +1,10 @@
 #include "histogram.h"
 #include <vector>
+#include <iostream>
+#include<conio.h>
 
 using namespace std;
+
 void find_minmax(vector<double> numbers, double& min, double& max)
 {
   min = numbers[0];
