@@ -7,22 +7,16 @@
 #pragma hdrstop
 #include "svg.h"
 using namespace std;
-
-
-
+struct Input {
+    vector<double> numbers;
+    size_t bin_count;
+};
 int main()
 {
-    size_t number_count;
-    cerr << "Enter number count:";
-    cin>>number_count;
-    const auto numbers = input_numbers(number_count);
-    size_t bin_count;
-    cerr << "Enter bin count: ";
-    cin >> bin_count;
-    const auto bins = make_histogram(numbers, bin_count,number_count);
-    string text_decoration;
-    cerr << "Enter text_decoration: ";
-    cin >> text_decoration;
-    show_histogram_svg(bins, text_decoration);
+
+    read_input(cin)
+    const auto numbers = input_numbers(in,number_count);
+    const auto bins = make_histogram(bin_size, bin_count);
+    show_histogram_svg(bins);
     return 0;
 }
