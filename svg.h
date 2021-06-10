@@ -13,6 +13,8 @@ void svg_begin(double width, double height);
 
 void svg_end();
 
+void decor(string &text_decoration);
+
 void show_histogram_svg(const vector<size_t>& bins, string text_decoration);
 
 #endif // SVG_H_INCLUDED

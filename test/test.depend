@@ -13,3 +13,33 @@
 1622300003 c:\users\user\desktop\lab03\lab03\histogram.h
 	<vector>
 
+1623070005 source:c:\users\user\desktop\лаб3\lab03\histogram.cpp
+	"histogram.h"
+	<vector>
+	<iostream>
+	<conio.h>
+
+1622387161 c:\users\user\desktop\лаб3\lab03\histogram.h
+	<vector>
+
+1623181749 source:c:\users\user\desktop\лаб3\lab03\test\main.cpp
+	"histogram.h"
+	"SVG.h"
+	<cassert>
+
+1622385147 c:\users\user\desktop\лаб3\lab03\test\histogram.h
+	<vector>
+
+1623178991 source:c:\users\user\desktop\лаб3\lab03\svg.cpp
+	"SVG.h"
+	<iostream>
+	<vector>
+
+1623179065 c:\users\user\desktop\лаб3\lab03\svg.h
+	<iostream>
+	<vector>
+
+1623179065 c:\users\user\desktop\лаб3\lab03\test\svg.h
+	<iostream>
+	<vector>
+

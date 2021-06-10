@@ -39,6 +39,8 @@
 		</Compiler>
 		<Unit filename="../histogram.cpp" />
 		<Unit filename="../histogram.h" />
+		<Unit filename="../svg.cpp" />
+		<Unit filename="../svg.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

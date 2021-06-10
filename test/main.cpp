@@ -1,7 +1,7 @@
 
 #include "histogram.h"
-	#include <cassert>
-
+#include "SVG.h"
+#include <cassert>
 
 	void test_positive()
 	{
@@ -46,7 +46,29 @@
 	    double min = 0;
 	    double max = 0;
 	    find_minmax({}, min, max);
+
 	}
+    void
+    test_indiv1()
+    {
+        string text_decoration="underline";
+        decor(text_decoration);
+        assert(text_decoration == "underline");
+    }
+    void
+    test_indiv2()
+    {
+        string text_decoration="underlin";
+        decor(text_decoration);
+        assert(text_decoration == "none");
+    }
+    void
+    test_indiv3()
+    {
+        string text_decoration="none";
+        decor(text_decoration);
+        assert(text_decoration == "none");
+    }
 int main()
 {
     test_positive();
@@ -54,8 +76,9 @@ int main()
     test_same();
     test_onenumber();
     test_empty();
-
-
+    test_indiv1();
+    test_indiv2();
+    test_indiv3();
 }
 
 
